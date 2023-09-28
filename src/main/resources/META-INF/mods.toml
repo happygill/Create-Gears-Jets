@@ -1,0 +1,40 @@
+
+modLoader = "javafml"
+loaderVersion = "[43,)"
+license="GPL-3.0"
+[[mods]] #mandatory
+modId = "create_gear_jet" #mandatory
+version = "0.1"
+displayName="Create: Gears & Jets" #mandatory
+displayTest = "MATCH_VERSION"
+
+authors="happysg" #optional
+
+description='''An addon to Create: Aeronautics that aims to add modern and realistic aircraft parts'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.create_gear_jet]] #optional
+# the modid of the dependency
+modId = "forge" #mandatory
+# Does this dependency have to exist - if not, ordering below must be specified
+mandatory = true #mandatory
+# The version range of the dependency
+versionRange="[43.2.11,)"#mandatory
+# An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+ordering = "NONE"
+# Side this dependency is applied on - BOTH, CLIENT or SERVER
+side = "BOTH"
+# Here's another dependency
+[[dependencies.create_gear_jet]]
+modId = "minecraft"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="1.19.2"
+ordering = "NONE"
+side = "BOTH"
+# Create dependency
+[[dependencies.create_gear_jet]]
+modId="create"
+mandatory=true
+versionRange = "[0.5.1.c-36,)"
+ordering="NONE"
+side="BOTH"
