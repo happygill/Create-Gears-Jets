@@ -1,9 +1,6 @@
 package com.happysg.cgj;
 
-import com.happysg.cgj.content.registry.AllBlocks;
-import com.happysg.cgj.content.registry.AllFluids;
-import com.happysg.cgj.content.registry.AllItems;
-import com.happysg.cgj.content.registry.ModCreativeTab;
+import com.happysg.cgj.content.registry.*;
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraft.client.Minecraft;
@@ -41,6 +38,9 @@ public class CreateGearsJets {
         AllItems.init();
         AllBlocks.init();
         AllFluids.init();
+        AllBlockEntities.init();
+        AllPartialModels.init();
+        ModCreativeTab.init();
     }
 
 

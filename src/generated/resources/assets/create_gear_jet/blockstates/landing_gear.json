@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "create_gear_jet:block/landing_gear/block"
+    }
+  }
+}

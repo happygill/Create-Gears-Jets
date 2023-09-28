@@ -1,0 +1,7 @@
+// 1.19.2	2023-09-28T14:51:46.8970048	Registrate Provider for create_gear_jet [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+ca66f9999bfd4f50d5f09691a6e054fa1a093ed5 assets/create_gear_jet/blockstates/landing_gear.json
+7319d7b7ed2db0b7a0db85ef40c8164082f375c5 assets/create_gear_jet/lang/en_ud.json
+e44f5e3b95b29021705f07c9d04afde4fba533fc assets/create_gear_jet/lang/en_us.json
+f1ef6ace88406dd5aeea84649217012b4736ec4e assets/create_gear_jet/models/item/landing_gear.json
+2fb3080b681f101e48b9fa4becb1a6a97742633c data/create_gear_jet/loot_tables/blocks/landing_gear.json
+8d1d9e9b22e23f461ad03ae99e3f7d8d82c42b74 data/minecraft/tags/blocks/mineable/pickaxe.json

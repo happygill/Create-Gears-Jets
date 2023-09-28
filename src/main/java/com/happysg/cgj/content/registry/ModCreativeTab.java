@@ -1,8 +1,6 @@
 package com.happysg.cgj.content.registry;
 
 import com.happysg.cgj.CreateGearsJets;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.ItemRenderer;
@@ -25,16 +23,15 @@ public class ModCreativeTab extends CreativeModeTab {
 
 
     public static final CreativeModeTab BASE = new ModCreativeTab("base","Create: Gears & Jets")
-            .withIcon(AllBlocks.FLYWHEEL::asStack);
+            .withIcon(AllBlocks.LANDING_GEAR::asStack);
 
     public ModCreativeTab(String id,String name) {
         super(CreateGearsJets.MODID + '.' + id);
         REGISTRATE.addRawLang("itemGroup."+CreateGearsJets.MODID +"."+id,name);
     }
 
-    public ModCreativeTab(String id) {
-        this(CreateGearsJets.MODID + '.' + id,toHumanReadable(id));
-    }
+
+    public static void init() {}
 
     ModCreativeTab withIcon(Supplier<ItemStack> icon) {
         this.icon = icon;
