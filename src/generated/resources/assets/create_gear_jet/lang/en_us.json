@@ -1,4 +1,10 @@
 {
+  "block.create_gear_jet.kerosene": "Kerosene",
   "block.create_gear_jet.landing_gear": "Landing Gear",
+  "block.create_gear_jet.oil": "Oil",
+  "fluid.create_gear_jet.kerosene": "Kerosene",
+  "fluid.create_gear_jet.oil": "Oil",
+  "item.create_gear_jet.kerosene_bucket": "Kerosene Bucket",
+  "item.create_gear_jet.oil_bucket": "Oil Bucket",
   "itemGroup.create_gear_jet.base": "Create: Gears & Jets"
 }

@@ -1,20 +1,17 @@
 package com.happysg.cgj;
 
 import com.happysg.cgj.content.registry.*;
+import com.happysg.cgj.foundation.datagen.ModMixingGen;
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import net.minecraft.client.Minecraft;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 
@@ -41,6 +38,9 @@ public class CreateGearsJets {
         AllBlockEntities.init();
         AllPartialModels.init();
         ModCreativeTab.init();
+
+        modEventBus.addListener(EventPriority.LOWEST, CreateGearsJets::gatherData);
+
     }
 
 
@@ -52,5 +52,14 @@ public class CreateGearsJets {
     }
     public static ResourceLocation asResource(String name) {
         return new ResourceLocation(MODID, name);
+    }
+
+    public static void gatherData(GatherDataEvent event) {
+        DataGenerator gen = event.getGenerator();
+
+        if (event.includeServer()) {
+            gen.addProvider(true, new ModMixingGen(gen));
+        }
+
     }
 }

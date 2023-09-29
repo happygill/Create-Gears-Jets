@@ -1,7 +1,13 @@
-// 1.19.2	2023-09-28T14:51:46.8970048	Registrate Provider for create_gear_jet [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.19.2	2023-09-28T17:11:58.1424207	Registrate Provider for create_gear_jet [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+22be29603c5d72d8f6b51703782f1cb4ffe142ce assets/create_gear_jet/blockstates/kerosene.json
 ca66f9999bfd4f50d5f09691a6e054fa1a093ed5 assets/create_gear_jet/blockstates/landing_gear.json
-7319d7b7ed2db0b7a0db85ef40c8164082f375c5 assets/create_gear_jet/lang/en_ud.json
-e44f5e3b95b29021705f07c9d04afde4fba533fc assets/create_gear_jet/lang/en_us.json
+7b093661da483d88f210cb4308047ff7859073c4 assets/create_gear_jet/blockstates/oil.json
+6f17f24ad99102e81243fc64a9c7f9cbc4be1bbd assets/create_gear_jet/lang/en_ud.json
+4c671a1e249c1f70c7009c0bfec5ea8041654478 assets/create_gear_jet/lang/en_us.json
+34230d32c70b59ddad0d04bb0c169562e96e00c3 assets/create_gear_jet/models/block/kerosene.json
+fc8c5a37f2ec562260b7cc61036fbc7e7be916b9 assets/create_gear_jet/models/block/oil.json
+d7af9df955e80048aca8b8fbed6b23a6ff7afd26 assets/create_gear_jet/models/item/kerosene_bucket.json
 f1ef6ace88406dd5aeea84649217012b4736ec4e assets/create_gear_jet/models/item/landing_gear.json
+daa12fb11945b557ad0c699a207e5749f63d6f0b assets/create_gear_jet/models/item/oil_bucket.json
 2fb3080b681f101e48b9fa4becb1a6a97742633c data/create_gear_jet/loot_tables/blocks/landing_gear.json
 8d1d9e9b22e23f461ad03ae99e3f7d8d82c42b74 data/minecraft/tags/blocks/mineable/pickaxe.json

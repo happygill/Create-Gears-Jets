@@ -1,4 +1,10 @@
 {
+  "block.create_gear_jet.kerosene": "ǝuǝsoɹǝʞ",
   "block.create_gear_jet.landing_gear": "ɹɐǝ⅁ buıpuɐꞀ",
+  "block.create_gear_jet.oil": "ןıO",
+  "fluid.create_gear_jet.kerosene": "ǝuǝsoɹǝʞ",
+  "fluid.create_gear_jet.oil": "ןıO",
+  "item.create_gear_jet.kerosene_bucket": "ʇǝʞɔnᗺ ǝuǝsoɹǝʞ",
+  "item.create_gear_jet.oil_bucket": "ʇǝʞɔnᗺ ןıO",
   "itemGroup.create_gear_jet.base": "sʇǝſ & sɹɐǝ⅁ :ǝʇɐǝɹƆ"
 }
